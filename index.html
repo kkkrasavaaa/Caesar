@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симетрична криптографічна ситема</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Симетрична криптографічна ситема</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Зашифровка тексту</a></li>
+            <li><a href="#">Дешифровка тексту</a></li>
+            <li><a href="#">Брутфорс атака</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="encryption-section">
+            <h2>ШИФР ЦЕЗАРЯ</h2>
+            <textarea id="text-to-process" placeholder="Введи текст (на інгліші)"></textarea>
+            <label for="shift">Введіть звиг:</label>
+            <input type="number" id="shift" placeholder="Введи давай хд" min="1" max="25">
+            <div>
+                <input type="radio" id="encrypt-radio" name="operation" value="encrypt" checked>
+                <label for="encrypt-radio">Зашифровка</label>
+                <input type="radio" id="decrypt-radio" name="operation" value="decrypt">
+                <label for="decrypt-radio">Розшифровка</label>
+                <input type="radio" id="bruteforce-radio" name="operation" value="bruteforce">
+                <label for="bruteforce-radio">Брутфорс</label>
+            </div>
+            <button id="process-button">БАБАХ</button>
+            <div id="result-text"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
